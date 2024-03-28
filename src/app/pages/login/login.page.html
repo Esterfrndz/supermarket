@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref="/onboarding">
+
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="header">
+
+    <h1>Login</h1>
+    <p>Usa tu usuario y contraseña para acceder</p>
+  </div>
+
+  <form>
+
+    <div class="form-field">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-input placeholder="Name" style="color:green"></ion-input>
+    </div>
+    <div class="form-field">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input type="email" placeholder="Email Addres" style="color:green"></ion-input>
+    </div>
+    <div class="form-field">
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-input placeholder="Phone number" style="color:green"></ion-input>
+    </div>
+
+    <div class="form-field">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input type="password" placeholder="Password" style="color:green"></ion-input>
+    </div>
+
+    <ion-button expand="block" routerLink="./home">Entrar</ion-button>
+    <div class="forgot-password">
+      <a routerLink="/forgot-password">Has olvidado tú contraseña?</a>
+    </div>
+  </form>
+</ion-content>

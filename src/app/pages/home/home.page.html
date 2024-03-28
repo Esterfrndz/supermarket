@@ -1,0 +1,40 @@
+<ion-content class="ion-paddin">
+
+  <div class="ion-margin-bottom" id="header">
+
+    <ion-icon id="menu-icon" name="grid-outline"></ion-icon>
+    <div class="location">
+      <ion-icon name="location"></ion-icon>
+      <h4 class="ion-no-margin">Supermarket Fresh </h4>
+    </div>
+    <div id="avatar" routerLink="/onboarding">
+      <ion-img src="../../../assets/memoji.png"></ion-img>
+    </div>
+  </div>
+
+
+  <!-- SEARCHBAR -->
+
+  <ion-searchbar></ion-searchbar>
+
+  <!-- BANNER -->
+
+  <div id="banner">
+    <ion-img src="../../../assets/banner.jpeg"></ion-img>
+  </div>
+
+
+  <!-- PRODUCTOS -->
+
+  <div class="list-title">
+    <h3 class="title">Oferta exclusiva</h3>
+    <a href="">Ver todo</a>
+  </div>
+
+  <div class="product-list">
+    <app-product-card *ngFor="let item of products" [item]="item"></app-product-card>
+  </div>
+
+
+
+</ion-content>
